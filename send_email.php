@@ -7,6 +7,9 @@ try {
     $mail = new PHPMailer\PHPMailer\PHPMailer(true);
     $mail->CharSet = 'UTF-8';
 
+    $name = $_POST['name'];
+    $message = $_POST['message'];
+
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
@@ -20,8 +23,11 @@ try {
     $mail->addReplyTo('amok2005@gmail.com', 'Тестовый сайт');
 
     $mail->isHTML(true);
-    $mail->Subject = 'Это тема тестового письма';
-    $mail->Body    = '<h1>Заголовок HTML</h1><p>Текст вашего письма</p>';
+    // $mail->Subject = 'Получено сообщение от '. strval($name);
+    $mail->Subject = mb_encode_mimeheader('Получено сообщение от ' . strval($name), 'UTF-8');
+    // $mail->Subject = mb_encode_mimeheader('Получено сообщение от ' . strval($name), 'UTF-8');
+    $mail->Body = mb_encode_mimeheader('<h1>Заголовок HTML</h1><p>' . strval($message) . '</p>', 'UTF-8');
+    $mail->Body    = '<h1>Заголовок HTML</h1><p>' . strval($message) . '</p>';
     $mail->AltBody = 'Текст вашего письма без HTML';
 
     $mail->send();

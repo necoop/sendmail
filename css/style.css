@@ -1,66 +1,95 @@
+@charset "UTF-8";
 body {
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
-}
-
-form {
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  min-width: 600px;
-  min-height: 200px;
-  border: 1px solid black;
-  border-style: dashed;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-form h3 {
-  padding: 5px;
-  background: lightgreen;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom: 1px solid gray;
-}
-form input {
-  background: rgba(241, 241, 237, 0.829);
-  height: 22px;
-  padding: 2px 7px;
-}
-
-.form_inner {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-  border: 1px solid gray;
-  margin: 50px;
-  margin-bottom: 30px;
-  border-radius: 10px;
-  align-items: center;
-}
-.form_inner .button {
   position: relative;
-  width: 125px;
-  height: 32px;
+}
+
+#form-status {
+  margin-bottom: 10px;
+}
+
+input,
+textarea {
+  border: 1px solid black;
+}
+
+.send-button {
+  padding: 5px 15px;
   background: lightgreen;
-  border-radius: 10px;
-  cursor: pointer;
+  border-radius: 5px;
+}
+
+.darkoverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.7;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.form_inner .button:active {
-  top: 1px;
-}
-.form_inner .button .no_highlight_text {
+
+.container-message {
   position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-select {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  /* IE/Edge */
+  user-select: none;
+  /* Стандарт */
+}
+
+#modal {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
 }
 
-#form-status {
-  text-align: center;
+.messagebox {
+  background: #fff;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  z-index: 100;
+  position: relative;
+  min-height: 80px;
+  min-width: 300px;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.message-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fade-in {
+  opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  visibility: visible;
 }/*# sourceMappingURL=style.css.map */
