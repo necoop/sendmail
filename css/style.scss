@@ -5,20 +5,52 @@ body {
     align-items: center;
     position: relative;
 }
-
+.contactForm{
+    border: 1px dashed #333333; /* Толщина, стиль, цвет */
+}
 #form-status {
     margin-bottom: 10px;
+}
+.curved-form{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+.form-container{
+    background: #ebeaf3;
+    // padding: 15px;
+}
+.form-header{
+    padding: 5px;
+    background: lightgreen;
+
+}
+.form-data{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.data-container{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
 }
 
 input,
 textarea {
     border: 1px solid black;
+    resize: vertical;
 }
 
 .send-button {
     padding: 5px 15px;
     background: lightgreen;
     border-radius: 5px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+#form-status{
+    height: 1em;
+    margin-top: 10px;
 }
 
 .darkoverlay {
