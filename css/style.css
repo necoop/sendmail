@@ -49,6 +49,7 @@ input,
 textarea {
   border: 1px solid black;
   resize: vertical;
+  padding: 3px;
 }
 
 .send-button {
@@ -134,4 +135,8 @@ textarea {
 .fade-in.visible {
   opacity: 1;
   visibility: visible;
+}
+
+.shadow {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2), -2px -5px 4px rgba(255, 255, 255, 0.3); /* тень с наклоном влево и вверх */
 }/*# sourceMappingURL=style.css.map */

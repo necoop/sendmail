@@ -1,129 +1,133 @@
 body {
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.contactForm{
-    border: 1px dashed #333333; /* Толщина, стиль, цвет */
+.contactForm {
+  border: 1px dashed #333333; /* Толщина, стиль, цвет */
 }
 #form-status {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-.curved-form{
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
+.curved-form {
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
-.form-container{
-    background: #ebeaf3;
-    // padding: 15px;
+.form-container {
+  background: #ebeaf3;
+  // padding: 15px;
 }
-.form-header{
-    padding: 5px;
-    background: lightgreen;
-
+.form-header {
+  padding: 5px;
+  background: lightgreen;
 }
-.form-data{
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
+.form-data {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
 }
-.data-container{
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
+.data-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
 }
-.form-inner{
-    max-width: 223px;
+.form-inner {
+  max-width: 223px;
 }
 
 input,
 textarea {
-    border: 1px solid black;
-    resize: vertical;
+  border: 1px solid black;
+  resize: vertical;
+  padding: 3px;
 }
 
 .send-button {
-    padding: 5px 15px;
-    background: lightgreen;
-    border-radius: 5px;
-    align-self: flex-end;
-    margin-top: 20px;
+  padding: 5px 15px;
+  background: lightgreen;
+  border-radius: 5px;
+  align-self: flex-end;
+  margin-top: 20px;
 }
-#form-status{
-    height: 1em;
-    margin-top: 10px;
+#form-status {
+  height: 1em;
+  margin-top: 10px;
 }
 
 .darkoverlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: black;
-    opacity: 0.7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: black;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-message {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    z-index: 100;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .no-select {
-    -webkit-user-select: none;
-    /* Safari */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* IE/Edge */
-    user-select: none;
-    /* Стандарт */
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* IE/Edge */
+  user-select: none;
+  /* Стандарт */
 }
 
 #modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .messagebox {
-    background: #fff;
-    height: fit-content;
-    display: flex;
-    z-index: 100;
-    position: relative;
-    min-height: 80px;
-    min-width: 300px;
-    padding: 15px;
-    justify-content: space-between;
-    border-radius: 5px;
+  background: #fff;
+  height: fit-content;
+  display: flex;
+  z-index: 100;
+  position: relative;
+  min-height: 80px;
+  min-width: 300px;
+  padding: 15px;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
 .message-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .fade-in {
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
 }
 
 .fade-in.visible {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
+}
+.shadow {
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2),
+    /*  тень с наклоном вправо и вниз */ -2px -5px 4px rgba(255, 255, 255, 0.3); /* тень с наклоном влево и вверх */
 }

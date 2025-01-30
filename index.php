@@ -11,33 +11,32 @@
 
 <body>
   <div class="form-inner curved-form">
-  <form id="contactForm" class="contactForm curved-form">
-    <div class="form-container curved-form">
-      <div class="form-header curved-form">
-        Форма обратной связи
-      </div>
-      <div class="form-data">
-        <div class="data-container">
-          <label for="name">Имя:</label>
-          <input type="text" id="name" name="name" required><br>
+    <form id="contactForm" class="contactForm curved-form shadow">
+      <div class="form-container curved-form">
+        <div class="form-header curved-form">
+          Форма обратной связи
         </div>
-        <div class="data-container">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required><br>
-        </div>
-        <div class="data-container">
-          <label for="message">Сообщение:</label>
-          <textarea id="message" name="message" required></textarea><br>
-        </div>
+        <div class="form-data">
+          <div class="data-container">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required><br>
+          </div>
+          <div class="data-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+          </div>
+          <div class="data-container">
+            <label for="message">Сообщение:</label>
+            <textarea id="message" name="message" required></textarea><br>
+          </div>
 
-        <button class="send-button" type="submit">Отправить</button>
+          <button class="send-button" type="submit">Отправить</button>
+        </div>
       </div>
-    </div>
-  </form>
-  <div id="form-status"></div>
-
+    </form>
+    <div id="form-status"></div>
   </div>
-  
+
 
   <div class="fade-in" id="modal">
     <div class="darkoverlay"></div>
