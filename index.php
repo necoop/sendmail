@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <div class="form-inner curved-form">
   <form id="contactForm" class="contactForm curved-form">
     <div class="form-container curved-form">
       <div class="form-header curved-form">
@@ -30,10 +31,13 @@
         </div>
 
         <button class="send-button" type="submit">Отправить</button>
-        <div id="form-status">Текст сообщения</div>
       </div>
     </div>
   </form>
+  <div id="form-status"></div>
+
+  </div>
+  
 
   <div class="fade-in" id="modal">
     <div class="darkoverlay"></div>
